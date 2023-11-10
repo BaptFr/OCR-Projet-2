@@ -13,15 +13,30 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body>   
     <div class="main-container">
-        <header></header>
+        <header>
+            <div class="header"> 
+                <section class="logo-container">
+                    <a href="#" title= "Booki"><img src="./images/logo/booki.png" alt="Logo Booki" ></a> 
+                </section>
+                <section class="menu">       
+                    <a href="#hebergements" title="Aller aux hébergements"><button class="menu-buttons">Hébergements</button></a>                     
+                    <a href="#activites" title="Aller aux activités"><button class="menu-buttons">Activités</button></a>
+                </section>
+            </div>                     
+        </header>
+        
         <main>
             <div class="hebergements-and-populaires">
-                <section class="hebergements">
-
+                
+                <section class="hebergements" id="hebergements">
+                    <div class="hebergements-title">
+                        <h2 class="section-title">Hébergements à Marseille</h2>
+                    </div>
                 </section>
-                <section class="populaires">
+
+                <section class="populaires" id="populaires">
                     <div class="populaires-title">
                         <h2 class="section-title">Les plus populaires</h2>
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
@@ -87,9 +102,19 @@
                     </div>
                 </section>
             </div>
-        </main>
-        <footer></footer>
-    </div>
-</body>
 
+            <div class="activites" id="activites">
+            </div>
+        </main>
+
+
+
+        <footer></footer>
+
+
+
+    </div>
+
+
+</body>
 </html>
