@@ -12,21 +12,41 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>   
-    <div class="main-container">
-        <header>
-            <div class="header"> 
-                <section class="logo-container">
-                    <a href="#" title= "Booki"><img src="./images/logo/booki.png" alt="Logo Booki" ></a> 
-                </section>
-                <section class="menu">       
-                    <a href="#hebergements" title="Aller aux hébergements"><button class="menu-buttons">Hébergements</button></a>                     
-                    <a href="#activites" title="Aller aux activités"><button class="menu-buttons">Activités</button></a>
-                </section>
-            </div>                     
-        </header>
-        
+
+<body>  
+    <header>
+        <div class="header"> 
+            <section class="logo-container">
+                <a href="#" title= "Booki"><img src="./images/logo/booki.png" alt="Logo Booki" ></a> 
+            </section>
+            <nav class="nav-menu">     
+                <a href="#hebergements" title="Aller aux hébergements"><button class="nav-buttons" onclick="">Hébergements</button></a>                     
+                <a href="#activites" title="Aller aux activités"><button class="nav-buttons" onclick="">Activités</button></a>
+            </nav>
+        </div>                     
+    </header>
+    
+    <div class="main-container">      
         <main>
+            <div class="info">
+                <section id="headline">
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1> 
+                 <p>En plein centre-ville ou en pleine nature </p>
+                </section>
+
+                <section class="search"> 
+                    <form action="" method="post">
+                        <label for="rechercher"></label>
+                        <input type="text" name="rechercher" id="rechercher" placeholder="Ville">
+                    </form>
+                </section>
+
+                <section class="filters">
+                </section>
+
+                <p> <span id= "choice-info"> <!-- LOGO INFO-->  Plus de <span><!-- FAIRE FIN DE DIV--> </span>logements dans cette ville </span></p>
+            </div>
+
             <div class="hebergements-and-populaires">
                 
                 <section class="hebergements" id="hebergements">
