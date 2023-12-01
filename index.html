@@ -15,23 +15,25 @@
 
 <body>
 
-            <!------------ HEADER ------------->  
+            <!-- HEADER -->  
     <header>
         <div class="header"> 
             <div class="logo-container">
                 <a href="#" title= "Booki"><img src="./images/logo/booki.png" alt="Logo Booki" ></a> 
             </div>
-            <nav class="navbar">     
+            <div class="navbar">
+                <nav>     
                 <a href="#hebergements" title="Aller aux hébergements"><button class="nav-buttons" onclick="">Hébergements</button></a>                     
                 <a href="#activites" title="Aller aux activités"><button class="nav-buttons" onclick="">Activités</button></a>
-            </nav>
+                </nav>
+            </div>  
         </div>                     
     </header>
     
     <div class="main-container">      
         <main>
 
-            <!------------ SEARCH ------------->
+            <!-- SEARCH -->
             <div class="search-infos">
 
                 <div class="headline">
@@ -44,29 +46,31 @@
                         <form action="" method="get">
                             <label for="search"></label>
                             <input type="search" name="search" id="search" placeholder="Marseille, France">
+                        </form>
                     </div>
 
                     <div class="search-submit">
-                        <input type="submit" class="search-submit" value="Rechercher" >
+                        <button type="submit" class="submit-button" value="Rechercher"> Rechercher </button>
+                        <button type="submit" class="submit-button-mobile" value=""> <i class="fa-solid fa-magnifying-glass" id="manifying-glass" style="color: white"></i></button> 
                     </div>
                 </div>
             
-                    <div class="filters-bar">
-                        <div class="bold-subtitle"> <p id="filters-title"> Filtres </p> 
+                <div class="filters-bar">
+                    <div class="bold-subtitle"> <p id="filters-title"> Filtres </p> 
+                    </div>
+                    <ul class="filters-list">
+                        <div class="filters-frame">
+                            <li class="filters-button"> <i class="fa-solid fa-money-bill-wave" style="color: #0065fc;"> </i>Économique 
+                            <li class="filters-button"> <i class="fa-solid fa-person" style="color: #0065fc;"> </i>Familial
                         </div>
-                            <ul class="filters-list">
-                                <div class="filters-frame">
-                                    <li class="filters-button"> <i class="fa-solid fa-money-bill-wave" style="color: #0065fc;"> </i>Économique 
-                                    <li class="filters-button"> <i class="fa-solid fa-person" style="color: #0065fc;"> </i>Familial
-                                </div>
-                                <div class="filters-frame">
-                                    <li class="filters-button"> <i class="fa-solid fa-heart" style="color: #0065fc;"> </i>Romantique
-                                    <li class="filters-button"> <i class="fa-solid fa-fire" style="color: #0065fc;"></i> Nos pépites 
-                                </div>
-                            </ul>
+                        <div class="filters-frame">
+                            <li class="filters-button"> <i class="fa-solid fa-heart" style="color: #0065fc;"> </i>Romantique
+                            <li class="filters-button"> <i class="fa-solid fa-fire" style="color: #0065fc;"></i> Nos pépites 
+                        </div>
+                    </ul>
                         
-                        </div>
-                        </form>
+                </div>
+                        
          
                 <div class="informations">
                     <div class="info-logo"> <i class="fa-solid fa-info" style="color: #0065fc;"></i> 
@@ -76,7 +80,7 @@
             </div>
 
 
-            <!------------ HEBERGEMENT AND POPULAIRES  ------------->
+            <!-- HEBERGEMENT AND POPULAIRES -->
             <div class="hebergements-and-populaires">
                 
                 <section class="hebergements" id="hebergements">
@@ -163,13 +167,12 @@
                                     </div>
                                 </article>
                             </a>
-                            </a>
                             <a href="#" id="auberge-la-canebiere">
                                 <article class="card">
                                     <img src="./images/hebergements/marcus-loke.jpg" alt="Image de la chambre montrant un lit superposé">
                                     <div class="card-content">
                                         <div class=card-txt>
-                                            <h3 class="card-title"> Hôtel La Canebière</h3>
+                                            <h3 class="card-title"> Auberge La Canebière</h3>
                                             <p class="card-subtitle">Nuit à partir de 25<span class="euro">€</span></p>
                                         </div>
                                         <div class=" card-rating">
@@ -188,7 +191,7 @@
                                     <img src="./images/hebergements/nicate-lee.jpg" alt="Image de la chambre montrant un lit superposé en bois">
                                     <div class="card-content">
                                         <div class=card-txt>
-                                            <h3 class="card-title"> Hôtel Le Panier</h3>
+                                            <h3 class="card-title"> Auberge Le Panier</h3>
                                             <p class="card-subtitle">Nuit à partir de 23<span class="euro">€</span></p>
                                         </div>
                                         <div class=" card-rating">
@@ -204,7 +207,8 @@
                             </a>
                         </div>
                     </div>
-                    <div href="#" class="bold-subtitle" id="more-results">  Afficher plus </div>
+                    <div class="bold-subtitle"> <a href="#" id="more-results"> Afficher plus </a> 
+                    </div>
                 </section>
 
                 <section class="populaires" id="populaires">
@@ -212,10 +216,10 @@
                         <h2 class="section-title">Les plus populaires</h2>
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                     </div>
-                        <div class="populaires-cards">
-                            <a href="#">
-                                <article class="card">
-                                    <img src="./images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                    <div class="populaires-cards">
+                           <a href="#">
+                             <article class="card">
+                                 <img src="./images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                     <div class="card-content">
                                         <div class="card-txt">
                                             <h3 class="card-title">Hôtel Le soleil du matin</h3>
@@ -275,15 +279,15 @@
             </div>
             
             
-          <!------------ ACTIVITES ------------->
+          <!-- ACTIVITES -->
             <div class="activites" id="activites">
-                <h2 class="section-title">Activités</h2>
+                <h2 class="section-title">Activités à Marseille</h2>
                 <div class="activites-frame">
                     <a href="#">
                         <article class="card">
                             <img src="./images/activites/reno-laithienne.jpg" alt="Photo du Vieux Port, Marseille">
                                 <div class="card-txt">
-                                    <h3 class="card-title">Vieux Port</h3>
+                                    <h3 class="card-title">Vieux-Port</h3>
                                 </div>
                         </article>
                     </a>
@@ -316,7 +320,7 @@
         </main>
 
 
-        <!------------ FOOTER ------------->
+        <!-- FOOTER -->
         <footer>
             <div class="footer-container">
                 <div class="footer-part">
