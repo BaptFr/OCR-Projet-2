@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer" >
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -17,14 +17,15 @@
 
             <!-- HEADER -->  
     <header>
+        <h1 class="sr-only">Booki - Trouvez votre hébergement et des activités pour des vacances de rêve</h1>
         <div class="header"> 
             <div class="logo-container">
                 <a href="#" title= "Booki"><img src="./images/logo/booki.png" alt="Logo Booki" ></a> 
             </div>
             <div class="navbar">
                 <nav>     
-                <a href="#hebergements" title="Aller aux hébergements"><button class="nav-buttons" onclick="">Hébergements</button></a>                     
-                <a href="#activites" title="Aller aux activités"><button class="nav-buttons" onclick="">Activités</button></a>
+                <a href="#hebergements" title="Aller aux hébergements"><span class="nav-buttons" onclick="">Hébergements</span></a>                     
+                <a href="#activites" title="Aller aux activités"><span class="nav-buttons" onclick="">Activités</span></a>
                 </nav>
             </div>  
         </div>                     
@@ -34,10 +35,10 @@
         <main>
 
             <!-- SEARCH -->
-            <div class="search-infos">
+            <section class="search-infos"> 
 
                 <div class="headline">
-                    <h1 class="section-title">Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <h2 class="section-title">Trouvez votre hébergement pour des vacances de rêve</h2>
                     <p class="subtitle">En plein centre-ville ou en pleine nature </p>
                 </div>
             
@@ -46,25 +47,26 @@
                         <form action="#" method="get">
                             <label for="search"></label>
                             <input type="search" name="search" id="search" placeholder="Marseille, France">
+                        </form>
                     </div>
                     <div class="search-submit">
                         <button type="submit" class="submit-button" value="Rechercher"> Rechercher </button>
                         <button type="submit" class="submit-button-mobile" value=""> <i class="fa-solid fa-magnifying-glass" id="manifying-glass" style="color: white"></i></button> 
-                    </div></form>
+                    </div>
                 </div>
             
                 <div class="filters-bar">
                     <div class="bold-subtitle"> <p id="filters-title"> Filtres </p> 
                     </div>
                     <ul class="filters-list">
-                        <div class="filters-frame">
-                            <li class="filters-button"> <i class="fa-solid fa-money-bill-wave" style="color: #0065fc;"> </i>Économique 
-                            <li class="filters-button"> <i class="fa-solid fa-person" style="color: #0065fc;"> </i>Familial
-                        </div>
-                        <div class="filters-frame">
-                            <li class="filters-button"> <i class="fa-solid fa-heart" style="color: #0065fc;"> </i>Romantique
-                            <li class="filters-button"> <i class="fa-solid fa-fire" style="color: #0065fc;"></i> Nos pépites 
-                        </div>
+                        <li class="filters-frame">
+                            <div class="filters-button"> <i class="fa-solid fa-money-bill-wave" style="color: #0065fc;"> </i>Économique </div>
+                            <div class="filters-button"> <i class="fa-solid fa-person" style="color: #0065fc;"> </i>Familial </div>
+                        </li>
+                        <li class="filters-frame">
+                            <div class="filters-button"> <i class="fa-solid fa-heart" style="color: #0065fc;"> </i>Romantique </div>
+                            <div class="filters-button"> <i class="fa-solid fa-fire" style="color: #0065fc;"></i> Nos pépites </div>
+                        </li>
                     </ul>
                         
                 </div>
@@ -75,14 +77,14 @@
                     </div>
                     <p class= "info-subtitle">Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>  
-            </div>
+            </section>
 
 
             <!-- HEBERGEMENT AND POPULAIRES -->
             <div class="hebergements-and-populaires">
                 
                 <section class="hebergements" id="hebergements">
-                    <div class="hebergements-title">
+                    <div class="section-title-container">
                         <h2 class="section-title">Hébergements à Marseille</h2>
                     </div>
                     <div class="hebergements-cards">
@@ -210,13 +212,13 @@
                 </section>
 
                 <section class="populaires" id="populaires">
-                    <div class="populaires-title">
+                    <div class="section-title-container">
                         <h2 class="section-title">Les plus populaires</h2>
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                     </div>
                     <div class="populaires-cards">
                            <a href="#">
-                             <article class="card">
+                             <article class="card" id="hotel-le-soleil">
                                  <img src="./images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                     <div class="card-content">
                                         <div class="card-txt">
@@ -278,8 +280,10 @@
             
             
           <!-- ACTIVITES -->
-            <div class="activites" id="activites">
+            <section class="activites" id="activites">
+                <div class="section-title-container">
                 <h2 class="section-title">Activités à Marseille</h2>
+                </div>
                 <div class="activites-frame">
                     <a href="#">
                         <article class="card">
@@ -314,13 +318,13 @@
                         </article>
                     </a>
                 </div>
-            </div>
+            </section>
         </main>
 
 
         <!-- FOOTER -->
         <footer>
-            <div class="footer-container">
+            <section class="footer-container"> <h3 class="sr-only">Informations additionnelles</h3>
                 <div class="footer-part">
                     <a class="bold-subtitle">À propos</a>
                         <ul class="a-propos">
@@ -343,7 +347,7 @@
                             <li class="liens-footer"><a href="#">Nous contacter</a></li>
                         </ul>
                 </div>        
-            </div>
+            </section>
         </footer>
 
 
