@@ -183,8 +183,9 @@ a {
 }
 
 .search-infos{
-    max-width: 100%;
-    margin: 0px 0px 35px 0px; 
+    max-width: 95%;
+    margin: 0px 0px 35px 0px;
+    padding: 0px 10px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
