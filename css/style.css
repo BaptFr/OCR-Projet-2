@@ -484,7 +484,8 @@ a {
 }
 
 .populaires .section-title-container{
-    justify-content: space-between;  
+    justify-content: space-between;
+    align-items: center; 
 }
 
 .populaires-cards .card {
